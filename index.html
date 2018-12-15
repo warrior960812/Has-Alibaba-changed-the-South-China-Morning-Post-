@@ -1,0 +1,342 @@
+<html>
+
+<head>
+    <title>Has Alibaba changed the South China Morning Post?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0">
+    <style>
+        /* Inspired by: http://embedresponsively.com/ */
+        
+        responsive-block {
+            display: block;
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        
+        ratio-1-to-1 responsive-block {
+            display: block;
+            position: relative;
+            padding-bottom: 100%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        
+        ratio-4-to-3 responsive-block {
+            display: block;
+            position: relative;
+            padding-bottom: 75%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        
+        responsive-block iframe responsive-block object,
+        responsive-block embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        body {
+            max-width: 360px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #333;
+        }
+        
+        img {
+            max-width: 100%;
+        }
+        
+        p {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        
+        figure {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        figure figcaption {
+            display: block;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            font-size: 0.85em;
+        }
+        
+        h2 {
+            border-bottom: 1px solid #ccc;
+            margin-top: 2em
+        }
+        
+        cover-image {
+            display: block;
+            position: relative;
+        }
+        
+        cover-image h1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            color: #eee;
+            text-align: center;
+        }
+        
+        cover-image author-block {
+            position: absolute;
+            bottom: 1em;
+            left: 0;
+            right: 0;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            opacity: 0.6;
+            background-color: white;
+        }
+        
+        code {
+            margin: 0;
+            max-width: 100%;
+            word-break: break-all;
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <cover-image>
+        <img src="images/mayun.jpg" alt="cover photo">
+
+
+
+        <h1>
+
+        </h1>
+        <author-block>
+            <br>
+            <strong>
+        <font size="6">Has Alibaba changed SCMP</font>
+        </strong>
+        </author-block>
+
+    </cover-image>
+
+    <p> There is a maritime sign in the nautical international signal flag, indicating that “My ship is willing to communicate with your ship”. In February 2018, the South China Morning Post (SCMP) applied this inspiration to its new logo, aiming to say "I
+        want to communicate with you.” </p>
+
+    <cover-image>
+        <img src="images/scmp logo.png" alt="cover photo">
+    </cover-image>
+
+    <p>SCMP is one of Hong Kong's most credible and competitive English-language media, with a history of 113 years.</p>
+    <cover-image>
+        <img src="images/s.jpg" alt="cover photo">
+    </cover-image>
+    <p> However, in November 2015, Alibaba announced that it would buy SCMP Alibaba and in April 2016 became the Post’s parent company. Many people speculating that this acquisition may affect the objectivity and neutrality of the Post. </p>
+    <cover-image>
+        <img src="images/new.png" alt="cover photo">
+    </cover-image>
+
+    <p>Does media ownership really affect editorial independence? Is SCMP really changing?</p>
+
+
+    <p><em><font color="Grey"> "We believe that through mergers or acquisitions, the largest shareholder of the new owner can obtain the right to speak, determine the business practices, resource allocation and personnel appointments of the media organizations, thus affecting the number of people in the news report, the subject matter choice, the content etc. Therefore, the mergers and acquisitions and investment actions of Beijing represent not only the expansion of their discourse, but also their ability to control the media. - Du Yaoming, Xie Tao, Qu Jia Ling 2018 HKJA Annual Report 2018</font></em>
+
+        <cover-image>
+            <img src="images/b.jpg" alt="cover photo">
+        </cover-image>
+    </p>
+
+
+
+    <p><em><font color="Grey">With the recognition that ownership is important, there is a second sentence: ownership is just one of many factors that influence news content. Because the operation of a professional media is a complex system, the main influencing factors include: position in market, readers’needs, and very important: the independence of editors and the professionalism they hold. In a media company, the editorial reporter is of course working for the big boss, but the profession they are engaged in is not a screw. (the example that SCMP was bought by Jack Ma remains to be observe, but at least at present it hasn’t brought any obvious changes to the content.) - Fang Kecheng, "NewsLab" </font></em>        </p>
+
+    <p>We interviewed different related people, such as journalists working on SCMP and some professors. They held different views and the former chief editor of SCMP said he gave no comment but the judgement can depend on the observation after analyzing
+        the content of the SCMP during these years. </p>
+
+
+
+    <h2>About the dataset </h2>
+
+    <p>
+        One of the most difficult part is to get the dataset at the beginning. We called and consulted with the SCMP and they told us even member can only read the news during the latest two months, and employees of the Post also can't read all the news for a
+        few years.
+    </p>
+    <cover-image>
+        <img src="images/捕获.png" alt="cover photo">
+    </cover-image>
+
+
+
+    <p>
+        Close to giving up this topic…luckily, we finally found a database called ProQuest from the website of Hong Kong Baptist University (HKBU). There are news texts from the Post from 1993 to 2018. Some data are missing, such as bylines in news in recent
+        years. In total, we scraped headlines of the SCMP articles from 2010 to 2018 and obtained <strong> 263,107 </strong> data points.
+    </p>
+    <cover-image>
+        <img src="images/263107.png" alt="cover photo">
+    </cover-image>
+
+
+
+    <p>At the same time, we also obtained a questionnaire made by a group of master students from HKBU. The samples, 80 students said that the main reason for them to read the Post was that they think it had a high degree of credibility. </p>
+    <cover-image>
+        <img src="images/survey.png" alt="cover photo">
+    </cover-image>
+
+    <h2> Robert Kuok and Jack Ma, more news about Jack Ma </h2>
+
+    <p>Before the data analysis, we had some analysis directions and clues through interviews or other conversations.</p>
+    <P>Gary Liu, CEO of SCMP, gave a speech in HKBU in October. Unsurprisingly he was asked that if the editorial board is still choosing its own topics? Gary said at least at present the Alibaba doesn’t give any pressure to their editors and he hope it
+        will not in the future. </P>
+
+    <cover-image>
+        <img src="images/000.jpg" alt="cover photo">
+    </cover-image>
+
+
+    <P>Bernice, a journalist in the Post said the change took place as early as in 1997, the handover year when the tycoon Robert Kwuk owned the SCMP. </P>
+
+
+    <cover-image>
+        <img src="images/hhe.jpg" alt="cover photo">
+    </cover-image>
+
+    <p> In 1997, the South China Morning Post was still owned by Guo Henian. Malaysia’s richest man, Guo Henian, was also the father of Shangri-La. Guo’s family has close ties with Chinese senior government officials due to the economic and social contribution
+        to the mainland. Some observers pointed out that Guo helped purifying the criticism of the Chinese government, but Guo denied. According to Huxiu media, on June 7, 2012, a foreign part-time editor of the Post, Alex Price, wrote an email to the
+        editor-in-chief Wang Xiangwei, who believed that SCMP had lost credibility in several news.
+    </P>
+
+    <cover-image>
+        <img src="images/company.png" alt="cover photo">
+    </cover-image>
+
+
+
+    <P> Guo Zhongshi, a professor at the Department of Communication at HKBU, believes that after bought by Alibaba, editors in the Post may think of their boss are Jack Ma while writhing, and then they are prone to cover some of what Jack Ma loves to hear.</P>
+    <P>It is difficult to define which content is Jack Ma loves to listen to, but a few days ago, the Post had a very interesting headline: Jack Ma is a Communist Party member, so what?</P>
+
+    <cover-image>
+        <img src="images/ma.png" alt="cover photo">
+    </cover-image>
+
+
+    <P>A source said that Jack Ma’s Alibaba is a company which has the closet relationship with the government and many executives in Alibaba was worked for government departments. By scraping the headlines from 2010 to 2018, we found that the number of
+        times mentioning Jack Ma was increasing, and that the number of his company Alibaba also appeared more than that of other companies in the BAT category. </P>
+
+    <cover-image>
+        <img src="images/Jack Ma frequency.png" alt="cover photo">
+    </cover-image>
+
+    <P><strong>Considering main audience of the Post, they are not mainly readers in China,but global readers.</strong>Alibaba’s vice president Joe Tsai also indicated that the purpose of buying SCMP is to show a better image of China. All kinds of signs
+        have increased speculation that the Post has become pro-Beijing. </P>
+    <figure>
+        <img src="images/Gary Liu.jpg" alt="cover photo">
+        <figcaption>
+            <em>At the time of its investment, Alibaba made it clear that it aims to use the SCMP to tell China’s story to the world, and to counter the “negative” portrayal of China in the Western media. Speaking at RISE, Tsai re-emphasized that point of view.</em>
+        </figcaption>
+    </figure>
+
+
+    <h2>Propoganda content is increasing with controversial content unchanged?</h2>
+
+
+    <h3> What’s the problem about G20?</h3>
+
+
+    <P> Zhang Jieping, former editor chief of Initium media, provided a clue to news analysis, which is to find some news on specific days such as G20. Zhang thinks the Post is still reporting some sensitive issues. In fact, we can still see about Liu Xiaobo,
+        June 4th accident. But at the same time, positive and propaganda reports are increasing,showing the good image of China to the world.</P>
+
+    <P>Zhang said the news coverage of G20 summit of the Post become highly similar to of newspapers such as China Daily and Global Times With this as a clue, we specially analyzed the news appeared on G20 from SCMP and also the news from China Daily. In
+        2015, the Post and Alibaba are still in the takeover transition phase and there was almost no word about G20 appearing in the headlines on November 15 and 16.
+        <cover-image>
+            <img src="images/pp.png" alt="cover photo">
+        </cover-image>
+
+        <p>By contrast, China Daily had a series of news reports related to G20 in 2014.</p>
+        <cover-image>
+            <img src="images/cd.png" alt="cover photo">
+        </cover-image>
+
+
+        <p> And then in 2016, the 11th G20 summit was held in China, to be precise, the city or Hangzhou which has Alibaba. This year the Post started to report news about G20 but far less than in 2017.</P>
+        <cover-image>
+            <img src="images/a.PNG" alt="cover photo">
+        </cover-image>
+
+        <p>Now, the South China Morning Post has a G20 column. </p>,
+        <cover-image>
+            <img src="images/g20 column.png" alt="cover photo">
+        </cover-image>
+
+
+
+
+
+
+        <h3>What can we talk about Xi?</h3>
+
+        <p> we analyzed annual word frequency of news of during 2010-2018, and we pay much attention to the 2012 and 2018, The two landmark years for China’s leaders. You need to specify the width and height of the iframe, making it non-responsive to different
+            screens.
+        </p>
+
+        <p>As you can see, in the 2012, Bo Xilai and Xi Jinping appears many times in headlines of news and this year China was preparing to replace its leaders. </p>
+        <cover-image>
+            <img src="images/bo.png" alt="cover photo">
+        </cover-image>
+
+        <p>By 2018, the present Xi amended the constitution and removed the president’s term limit and emphasized the party leads the government, military, society..</p>
+        <figure>
+            <img src="images/xi.png" alt="">
+            <figcaption>
+                <em>Source: Picture from SCMP</em>.
+            </figcaption>
+        </figure>
+
+
+        <p>It was also a huge change, however, the name of Xi didn’t appear as many times as it did in 2012. Instead, We just see the “government” and “Beijing” for many times. Was the Post deliberately evading something? </p>
+        <cover-image>
+            <img src="images/999.jpg" alt="cover photo">
+        </cover-image>
+
+
+        <p>However, the Post has been the first to report that the Communist Party's military heavyweight tigers who was being investigated, and we can still see there are news talking about Xi's amendment. </p>
+        <cover-image>
+            <img src="images/Xi constitution.png" alt="cover photo">
+        </cover-image>
+
+
+        <p>At the same time, based on limited data, we roughly found that the number of Post's foreign journalists shows a upward trend, and all of these may exactly be a signal that SCMP proves its neutrality and objectivity to the outside world. </p>
+        <cover-image>
+            <img src="images/Jack Ma name.png" alt="cover photo">
+        </cover-image>
+
+        <p>Change is happening in an unobvious way and is hard to perceive.
+        </p>
+
+        <p>Team members: Xu Wen, Yao Nuan, Li Yijie</p>
+        <p>Find the GitHub repo <a href="https://github.com/warrior960812/Has-Alibaba-changed-the-South-China-Morning-Post-">here</a>.</p>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-37311363-17"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-37311363-17');
+        </script>
+
+</body>
+
+</html>
